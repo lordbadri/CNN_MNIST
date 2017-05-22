@@ -11,7 +11,7 @@ from keras import backend as K
 import pandas as pd 
 K.set_image_dim_ordering('th')
 # fix random seed for reproducibility
-seed = 7
+seed = 42
 numpy.random.seed(seed)
 # load data
 """(X_train, y_train), (X_test, y_test) = mnist.load_data()
