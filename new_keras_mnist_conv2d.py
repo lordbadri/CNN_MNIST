@@ -92,9 +92,9 @@ def larger_model_2():
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
     return model
 # build the model
-model = larger_model_2()
+model = larger_model_1()
 # Fit the model
-history=model.fit(X_train, y_train, nb_epoch=294, batch_size=256)
+history=model.fit(X_train, y_train, nb_epoch=200, batch_size=256)
 #history=model.fit(X_train, y_train, nb_epoch=50, batch_size=200, validation_split=.05)
 
 predictions = model.predict_classes(X_test, verbose=0)
